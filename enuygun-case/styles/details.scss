@@ -1,0 +1,113 @@
+.employee-detail-container {
+  &-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 720px) {
+      flex-direction: column;
+    }
+  }
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  padding: 24px;
+  justify-content: space-around;
+
+
+  .employee-detail {
+    background-color: #f3f4f6;
+    border-radius: 1.5rem;
+    max-width: 320px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition-duration: 200ms;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin:8px;
+    
+    img { 
+      width: 100%;
+      border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+
+    &:active {
+      transform: translateY(5px);
+    }
+
+
+    &__employee-header {
+      font-size: 22px;
+      font-weight: bold;
+
+    }
+
+    &__employee-content {
+      font-size: 16px;
+      color: #418CFD;
+    }
+
+
+    &__content {
+      background-color: #f3f4f6;
+      border-radius: 1.5rem;
+      max-width: 320px;
+      border: 1px solid #d1d5db;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      transition-duration: 200ms;
+      cursor: pointer;
+      height: 100%;
+
+      &:hover {
+        transform: translateY(-8px);
+      }
+
+      &:active {
+        transform: translateY(5px);
+      }
+    }
+
+    &__content-right {
+      background-color: #f3f4f6;
+      border-radius: 1.5rem;
+      max-width: 320px;
+      border: 1px solid #d1d5db;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      transition-duration: 200ms;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      &:hover {
+        transform: translateY(-8px);
+      }
+
+      &:active {
+        transform: translateY(5px);
+      }
+
+
+      a {
+        font-size: 16px;
+        color: #418CFD;
+      }
+    }
+  }
+
+}
